@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- 暖米黄纸质感底色 -->
+  <rect width="1920" height="1080" fill="#f5f0e6"/>
+  <rect width="1920" height="1080" fill="#f7f2e6"/>
+
+  <!-- 细腻颗粒 -->
+  <rect width="1920" height="1080" filter="url(#grain)" opacity="0.35"/>
+
+  <!-- 暗角 -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="55%" stop-color="#2a2520" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#2a2520" stop-opacity="0.18"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- 顶部电影胶片条 -->
+  <g opacity="0.22">
+    <rect x="0" y="0" width="1920" height="110" fill="#2a2520"/>
+    <rect x="40" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="140" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="240" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="340" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="440" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="540" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="640" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="740" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="840" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="940" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1040" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1140" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1240" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1340" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1440" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1540" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1640" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1740" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1840" y="25" width="55" height="60" rx="4" fill="#f5f0e6"/>
+  </g>
+
+  <!-- 底部电影胶片条 -->
+  <g opacity="0.22">
+    <rect x="0" y="970" width="1920" height="110" fill="#2a2520"/>
+    <rect x="40" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="140" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="240" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="340" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="440" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="540" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="640" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="740" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="840" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="940" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1040" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1140" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1240" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1340" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1440" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1540" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1640" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1740" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+    <rect x="1840" y="995" width="55" height="60" rx="4" fill="#f5f0e6"/>
+  </g>
+
+  <!-- 左侧简约人物剪影 -->
+  <g fill="#2a2520" opacity="0.16">
+    <!-- 站立的人 -->
+    <path d="M220 820 Q220 760 250 760 Q280 760 280 820 L280 920 L255 920 L255 830 L245 830 L245 920 L220 920 Z"/>
+    <circle cx="250" cy="725" r="28"/>
+    <!-- 远处行走的人 -->
+    <path d="M380 850 Q375 800 400 795 Q425 790 435 830 L455 900 L430 905 L415 850 L400 905 L375 900 Z"/>
+    <circle cx="405" cy="765" r="22"/>
+  </g>
+
+  <!-- 中间偏右人物剪影 -->
+  <g fill="#2a2520" opacity="0.14">
+    <!-- 侧面站立的人 -->
+    <path d="M1320 780 Q1310 720 1350 715 Q1390 710 1400 770 L1420 880 L1395 885 L1380 790 L1360 885 L1335 880 Z"/>
+    <ellipse cx="1365" cy="680" rx="26" ry="30"/>
+    <!-- 行走的人 -->
+    <path d="M1580 820 Q1570 760 1610 755 Q1650 750 1660 810 L1690 910 L1665 915 L1640 850 L1620 915 L1595 910 Z"/>
+    <circle cx="1615" cy="720" r="25"/>
+  </g>
+
+  <!-- 远处小人物剪影 -->
+  <g fill="#2a2520" opacity="0.1">
+    <path d="M600 680 Q595 650 610 648 Q625 646 630 676 L640 720 L625 722 L618 685 L612 722 L597 720 Z"/>
+    <circle cx="612" cy="630" r="14"/>
+
+    <path d="M820 690 Q815 660 830 658 Q845 656 850 686 L860 730 L845 732 L838 695 L832 732 L817 730 Z"/>
+    <circle cx="832" cy="640" r="14"/>
+  </g>
+
+  <!-- 炭黑色手绘线条装饰 -->
+  <g stroke="#2a2520" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.12">
+    <path d="M100 400 Q300 380 500 420"/>
+    <path d="M1450 350 Q1650 330 1850 370"/>
+    <path d="M150 600 Q400 620 650 590"/>
+    <path d="M1250 650 Q1500 670 1750 640"/>
+    <path d="M700 300 Q960 280 1220 310"/>
+  </g>
+
+  <!-- 散落的圆点与短线，模拟手绘笔触 -->
+  <g fill="#2a2520" opacity="0.1">
+    <circle cx="180" cy="550" r="6"/>
+    <circle cx="1700" cy="500" r="8"/>
+    <circle cx="1550" cy="620" r="5"/>
+    <circle cx="320" cy="480" r="7"/>
+    <circle cx="1100" cy="520" r="6"/>
+  </g>
+  <g stroke="#2a2520" stroke-width="2.5" stroke-linecap="round" opacity="0.1">
+    <line x1="900" y1="700" x2="930" y2="700"/>
+    <line x1="480" y1="320" x2="510" y2="320"/>
+    <line x1="120" y1="950" x2="150" y2="950"/>
+    <line x1="1780" y1="200" x2="1810" y2="200"/>
+  </g>
+</svg>

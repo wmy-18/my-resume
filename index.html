@@ -3,16 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="隗茂云的个人作品集 - 青岛大学环境智能与低碳技术专业，AI数据工程师方向" />
-    <meta name="theme-color" content="#0a0f14" />
+    <meta name="description" content="隗茂云的个人作品集 - 青岛大学环境智能与低碳技术专业，AI数据工程师方向。展示个人信息、教育背景、实践经历、技能证书与项目作品。" />
+    <meta name="keywords" content="隗茂云,个人作品集,AI数据工程师,大模型训练标注,青岛大学" />
+    <meta name="author" content="隗茂云" />
+    <meta name="theme-color" content="#0c0c0c" />
+
+    <!-- Open Graph 基础分享信息 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="隗茂云 · 个人作品集" />
+    <meta property="og:description" content="AI数据工程师方向 · 青岛大学环境智能与低碳技术专业" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="隗茂云 · 个人作品集" />
+    <meta name="twitter:description" content="AI数据工程师方向 · 青岛大学环境智能与低碳技术专业" />
+
     <title>隗茂云 · 个人作品集</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-CkoA4gtT.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D1BGDJc8.css">
+
+    <!-- 极简页面加载提示：React 挂载后自动替换 -->
+    <style>
+      #app-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        background: #0c0c0c;
+        color: #8b8170;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        z-index: 99999;
+      }
+      #app-loader .spinner {
+        width: 26px;
+        height: 26px;
+        border: 2px solid rgba(245, 240, 230, 0.12);
+        border-top-color: #e8702a;
+        border-radius: 50%;
+        animation: app-spin 0.9s linear infinite;
+      }
+      @keyframes app-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BXCe2Abw.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BZcJEwbF.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="app-loader" aria-hidden="true">
+        <div class="spinner"></div>
+        <span>加载中</span>
+      </div>
+    </div>
   </body>
 </html>
